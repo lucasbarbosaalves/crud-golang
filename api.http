@@ -1,0 +1,29 @@
+POST http://localhost:5000/usuarios HTTP/1.1
+Content-Type:  application/json
+
+{
+    "nome": "Gabrielle",
+    "email": "gaby@email.com"
+}
+
+###
+GET http://localhost:5000/usuarios HTTP/1.1
+Content-Type: application/json
+
+###
+GET http://localhost:5000/usuarios/2 HTTP/1.1
+
+Content-Type: application/json
+
+###
+PUT http://localhost:5000/usuarios/1 HTTP/1.1
+
+Content-Type: application/json
+{
+    "nome": "João da Silva",
+    "email": "joao2@gmail.com",
+}
+
+###
+DELETE http://localhost:5000/usuarios/5 HTTP/1.1
+Content-Type: application/json
